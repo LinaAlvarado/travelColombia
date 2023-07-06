@@ -1,3 +1,193 @@
 @import url("https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  color: #1E1E1E;
+}
+
+header {
+  width: 100%;
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.8235294118);
+  backdrop-filter: blur(0.2rem);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+header ul {
+  display: flex;
+}
+header ul li {
+  list-style: none;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+}
+header ul li a {
+  color: #2A6384;
+  font-weight: 500;
+}
+header ul li a:hover {
+  color: #012C44;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  color: white;
+  background-color: #2A6384;
+  border: none;
+  border-radius: 2.75rem;
+  width: 150px;
+  height: 44px;
+  transition: all 1s;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #012C44;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+main .conteiner-text {
+  display: grid;
+  justify-content: center;
+  gap: 1rem;
+}
+main .conteiner-text p {
+  width: 300px;
+}
+main .conteiner-imgs .img-animal {
+  position: relative;
+  left: 50px;
+  bottom: -30px;
+  width: 200px;
+}
+main .conteiner-imgs .img-houses {
+  width: 400px;
+}
+
+h1 {
+  font-family: "Paytone One", sans-serif;
+  font-size: 4rem;
+}
+
+.section-conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 5rem 0;
+}
+.section-conteiner .conteiner-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+.section-conteiner .conteiner-cards .card1 {
+  width: 400px;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #E0F3D5;
+}
+.section-conteiner .conteiner-cards .card1 .card-conteiner-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.section-conteiner .conteiner-cards .card1 .card-conteiner-title .card-number {
+  background-color: #496F32;
+  width: 4rem;
+  height: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  color: white;
+}
+.section-conteiner .conteiner-cards .card2 {
+  width: 400px;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #DEEFFF;
+}
+.section-conteiner .conteiner-cards .card2 .card-conteiner-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.section-conteiner .conteiner-cards .card2 .card-conteiner-title .card-number {
+  background-color: #2A6384;
+  width: 4rem;
+  height: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  color: white;
+}
+.section-conteiner .conteiner-cards .card3 {
+  width: 400px;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #FEFFDE;
+}
+.section-conteiner .conteiner-cards .card3 .card-conteiner-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.section-conteiner .conteiner-cards .card3 .card-conteiner-title .card-number {
+  background-color: #C0790E;
+  width: 4rem;
+  height: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  color: white;
+}
+.section-conteiner .conteiner-cards .card4 {
+  width: 400px;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #FFE7E7;
+}
+.section-conteiner .conteiner-cards .card4 .card-conteiner-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.section-conteiner .conteiner-cards .card4 .card-conteiner-title .card-number {
+  background-color: #BE5050;
+  width: 4rem;
+  height: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  color: white;
+}
 
 /*# sourceMappingURL=style.css.map */

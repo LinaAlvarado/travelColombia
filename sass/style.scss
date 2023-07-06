@@ -1,1 +1,190 @@
-@use 'variables'
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: $font-base;
+  color: $dark-color;
+}
+
+header {
+  width: 100%;
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffffd2;
+  backdrop-filter: blur(0.2rem);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  ul {
+    display: flex;
+    li {
+      list-style: none;
+      margin: 1rem;
+      display: flex;
+      align-items: center;
+
+      a {
+        color: $primary-color;
+        font-weight: 500;
+
+        &:hover {
+          color: $dark-blue;
+        }
+      }
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  color: #ffff;
+  background-color: $primary-color;
+  border: none;
+  border-radius: 2.75rem;
+  width: 150px;
+  height: 44px;
+  transition: all 1s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $dark-blue;
+  }
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+
+  .conteiner-text {
+    display: grid;
+    justify-content: center;
+    gap: 1rem;
+    p {
+      width: 300px;
+    }
+  }
+
+  .conteiner-imgs {
+
+    .img-animal {
+      position: relative;
+      left: 50px;
+      bottom: -30px;
+      width: 200px;
+    }
+
+    .img-houses {
+      width: 400px;
+    }
+  }
+}
+
+h1 {
+  font-family: $font-titles;
+  font-size: $b-title;
+}
+
+.section-conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 5rem 0;
+
+  .conteiner-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    
+    @mixin background-card($bg-card){
+      width: 400px;
+      padding: 1rem;
+      border-radius: 1rem;
+      background-color: $bg-card;
+    }
+    
+    @mixin background-color-number($bg-number){
+      background-color: $bg-number;
+      width: 4rem;
+      height: 2rem;
+      border-radius: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bolder;
+      color: #ffff
+    }
+
+    .card1{
+      @include background-card($light-green);
+  
+      .card-conteiner-title{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+        
+        .card-number{
+         @include background-color-number($green)
+        }
+      }
+    }
+
+    .card2{
+      @include background-card($light-blue);
+  
+      .card-conteiner-title{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+        
+        .card-number{
+         @include background-color-number($primary-color)
+        }
+      }
+    }
+
+    .card3{
+      @include background-card($light-yellow);
+  
+      .card-conteiner-title{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+        
+        .card-number{
+         @include background-color-number($yellow)
+        }
+      }
+    }
+
+    .card4{
+      @include background-card($light-red);
+  
+      .card-conteiner-title{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+        
+        .card-number{
+         @include background-color-number($red)
+        }
+      }
+    }
+  }
+}
